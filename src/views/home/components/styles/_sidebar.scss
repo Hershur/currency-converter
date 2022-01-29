@@ -1,0 +1,22 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 18px;
+    background: rgba(54,65,79, 0.9)
+}
+  
+.sidebar a, .sidebar h2{ 
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a i {
+    width: 25px;
+}
