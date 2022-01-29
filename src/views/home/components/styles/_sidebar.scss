@@ -20,3 +20,10 @@
 .sidebar a i {
     width: 25px;
 }
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 0;
+    }
+}
