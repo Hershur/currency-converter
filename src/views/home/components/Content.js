@@ -215,13 +215,13 @@ export const Content = ()=> {
                 </div>
 
                 <div className="display-conversion-box">
-                    <div>You're converting: {wallet.convertFrom.split(' ')[0]}{convertFromRef?.current?.value}</div>
+                    <div>You're converting: {wallet.convertFrom.split(' ')[0]}{Intl.NumberFormat().format(convertFromRef?.current?.value)}</div>
                     
                     {
                         conversion && 
                         <>
                             <div>Exchange rate: 1{mapConversion.from.toLocaleUpperCase()} = {conversion}{mapConversion.to.toLocaleUpperCase()} <br/></div>
-                            <div>You'll get: {wallet.convertTo.split(' ')[0]}{Number(convertToRef.current.value).toFixed(3)}</div>
+                            <div>You'll get: {wallet.convertTo.split(' ')[0]}{Intl.NumberFormat().format(Number(convertToRef.current.value).toFixed(3))}</div>
                         </>
                     }
 
